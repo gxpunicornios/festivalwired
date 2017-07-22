@@ -1,0 +1,39 @@
+.home{
+  height: 670px;
+  background-color: blue;
+}
+
+.beneficios{
+  height: 670px;
+  background-color: red;
+}
+
+.depoimentos{
+  height: 670px;
+  background-color: green;
+}
+
+.col-sm-8{
+  background-color: pink;
+}
+
+.col-sm-9{
+  background-color: black;
+}
+
+form{
+  background-color: brown;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 200px;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+.skill{
+  height: 100px;
+}
