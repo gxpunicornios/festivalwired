@@ -28,6 +28,7 @@ form{
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 200px;
+
 }
 
 input{
@@ -36,4 +37,32 @@ input{
 
 .skill{
   height: 100px;
+}
+
+h3.rosa{
+  background-color: purple;
+  color: white;
+  margin: 0px;
+  padding-left: 10px;
+  margin-left: 30%;
+
+}
+
+.a{
+  width: 220px;
+}
+
+.b{
+  width: 400px;
+}
+
+.c{
+  width: 300px;
+}
+
+.data{
+  color: white;
+  margin-left: 20%;
+  margin-top: 20%;
+  margin-bottom: 2%
 }
