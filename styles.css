@@ -1,46 +1,88 @@
-.home{
-  height: 670px;
-  background-color: blue;
+body{
+  margin-top: 0;
 }
 
-.beneficios{
+.home{
   height: 670px;
-  background-color: red;
+  background-color: #051f5b;
+  background-image: url('img/img_sp.png');
+  background-size: cover;
+  margin: 0;
+}
+
+.home p{
+  font-size: 25px;
+}
+
+.home img{
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.hi{
+  height: 670px;
 }
 
 .depoimentos{
-  height: 670px;
-  background-color: green;
+  height: 570px;
 }
 
-.col-sm-8{
-  background-color: pink;
+.formulario{
+  background-color: #ed528b;
+  height: 70%;
+  margin-top: 30%;
+  margin-right: 10%;
+  width: 80%
 }
 
-.col-sm-9{
-  background-color: black;
+.formulario p{
+  color: white;
+  margin-left: 2%;
+  font-size: 24px;
 }
-
 form{
-  background-color: brown;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 200px;
+  width: 98%;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 65%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+
+button{
+  background-color: #7abe43;
+  border: 0;
+  width: 98%;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 15%;
+  color: white;
+  margin-left: 1%;
+}
+
+input, textarea{
+  width: 100%;
+  background-color: #051f5b;
+  color: white;
+  border: 0;
+  height: 20%;
+  margin-left: 1%;
+  margin-bottom: 2%;
 
 }
 
-input{
-  margin-bottom: 10px;
+::-webkit-input-placeholder {
+  color: white;
 }
 
 .skill{
-  height: 100px;
+  height: 45%;
 }
 
-h3.rosa{
-  background-color: purple;
+p.rosa{
+  background-color: #ed528b;
   color: white;
   margin: 0px;
   padding-left: 10px;
@@ -49,20 +91,97 @@ h3.rosa{
 }
 
 .a{
-  width: 220px;
+  width: 28%;
 }
 
 .b{
-  width: 400px;
+  width: 50%;
 }
 
 .c{
-  width: 300px;
+  width: 38%;
 }
 
 .data{
   color: white;
-  margin-left: 20%;
+  margin-left: 30%;
   margin-top: 20%;
-  margin-bottom: 2%
+  margin-bottom: 2%;
+}
+
+footer {
+  color: white;
+  font-family: sans-serif;
+  background-color: #051f5b;
+  height: 100px;
+}
+
+footer h1 {
+  margin: 0;
+}
+
+footer img {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+  .home{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .home p{
+    font-size: 16px;
+  }
+
+  form{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  button{
+    width: 100%;
+
+  }
+
+  p.rosa{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 5%;
+    margin-bottom: 0;
+  }
+
+  p.rosa.a{
+    width: 60%;
+    margin-top: 30%;
+  }
+
+  p.rosa.b{
+    width: 100%;
+  }
+
+  p.rosa.c{
+    width: 80%;
+  }
+
+  .formulario{
+    background-color: #ed528b;
+    height: 75%;
+    margin-top: 0%;
+    margin-right: 0%;
+  }
+
+  .formulario p{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 2%;
+  }
+
+  footer{
+    height: 50%;
+  }
 }
