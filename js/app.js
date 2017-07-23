@@ -36,8 +36,17 @@ $(document).ready(function() {
       // Callback handler that will be called on success
       request.done(function (response, textStatus, jqXHR){
           // Log a message to the console
-          console.log("Hooray, it worked! "+ response);
+          console.log(response);
+          if(response == "added"){
+            $('alert-box').innerText="Email Cadastrado, obrigado!";
+          }else if(response == "email"){
+            $('alert-box').innerText="Email já cadastrado";
+          }
+          else{
+            $('alert-box').innerText="Dados inválidos";
+          }
       });
+
 
       // Callback handler that will be called on failure
       request.fail(function (jqXHR, textStatus, errorThrown){

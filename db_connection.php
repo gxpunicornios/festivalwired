@@ -15,7 +15,7 @@ class DbConnect {
 		if (!$this->conn) {
 		    die("Connection failed: " . mysqli_connect_error());
 		}
-		echo "Connected successfully";
+		//echo "Connected successfully";
 	}
 
 	function close(){
@@ -24,13 +24,13 @@ class DbConnect {
 
 	function insertUserData($user_name, $user_email, $user_tel, $user_student, $user_skill){
 
-		if(!isset($user_name) || !isset($user_email) || !isset($user_tel) || !isset($user_student) || !isset($user_skill)) {
+		if($user_name === "" || $user_email === "" || $user_tel === "" || $user_student === "" || $user_skill === "") {
+			echo "error";
 			return;
-
 		}
 
 		if($this->getUserData($user_email)) {
-			echo "email already on database";
+			echo "email";
 			return;
 		}
 
@@ -39,9 +39,10 @@ class DbConnect {
 		$sql = "INSERT INTO user VALUES (DEFAULT,'$user_name','$user_tel','$user_email','$user_student','$user_skill')";
 
 		if ($this->conn->query($sql) === TRUE) {
-		    echo "New record created successfully";
+		    echo "added";
 		} else {
-		    echo "Error: " . $sql . "<br>" . $this->conn->error;
+			echo "error";
+		    //echo "Error: " . $sql . "<br>" . $this->conn->error;
 		}
 	}
 
