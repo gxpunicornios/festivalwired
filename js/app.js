@@ -38,12 +38,12 @@ $(document).ready(function() {
           // Log a message to the console
           console.log(response);
           if(response == "added"){
-            $('alert-box').innerText="Email Cadastrado, obrigado!";
+            alert("Email Cadastrado, obrigado!");
           }else if(response == "email"){
-            $('alert-box').innerText="Email já cadastrado";
+            alert("Email já cadastrado");
           }
           else{
-            $('alert-box').innerText="Dados inválidos";
+            alert("Dados inválidos");
           }
       });
 
